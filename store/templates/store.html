@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Mystery Bookstore</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
 </head>
-<body>
-{% if request.user.is_authenticated%}
-    <h4> Welcome,{%if request.user.first_name%}
-            {{request.user.first_name}}
-        {%else %}
-            {{request.user.username}}
-        {%endif%} ! <a href="{% url 'auth_logout' %} ">Log Out</a>
-     </h4>
-{%else%}
-<h4> Welcome, Mysetrious person! would you like to login <a href="{%url 'auth_login' %}">Login</a></h4>
-{%endif%}
 <h1>
-    Welcome to Mystery book store! there are {{ count }} books in stock. User Location {{request.session.location}}</h1>
+    Welcome to Mystery book store! there are {{ count }} books in stock. User Location {{request.session.location}}
+</h1>
+<table>
+{% if request.user.is_authenticated%}
+        <h4> Welcome,
+            {%if request.user.first_name%}
+                {{request.user.first_name}}
+            {%else %}
+                {{request.user.username}}
+            {%endif%} !
+            <a href="{% url 'auth_logout' %} ">Log Out</a>
+         </h4>
+{%else%}
+<h4>
+        <table >
+            <tr border="0">
+                <td>Welcome, Mysetrious person! would you like to login</td>
+                <td> <a href="{%url 'auth_login' %}">Login</a></td>
+            </tr>
+
+               <td>If you have not registered yet, Please click on Register</td>
+                <td> <a href="{%url 'registration_register' %}">Register</a></td>
+            </tr>
+        </table>
+</h4>
+{%endif%}
+
 </body>
 </html>
