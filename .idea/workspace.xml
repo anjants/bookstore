@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="301b285e-5686-4593-8a2b-6e7e1f040926" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bookstore/settings.py" afterPath="$PROJECT_DIR$/bookstore/settings.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/store/templates/base.html" afterPath="$PROJECT_DIR$/store/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/activate.html" afterPath="$PROJECT_DIR$/store/templates/registration/activate.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/activation_complete.html" afterPath="$PROJECT_DIR$/store/templates/registration/activation_complete.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/login.html" afterPath="$PROJECT_DIR$/store/templates/registration/login.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/logout.html" afterPath="$PROJECT_DIR$/store/templates/registration/logout.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/store/templates/registration/registration_complete.html" />
-      <change beforePath="$PROJECT_DIR$/store/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/store/templates/registration/registration_form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +60,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bookstore/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="770">
+              <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
               <folding>
                 <marker date="1524137874502" expanded="true" signature="884:1127" ph="..." />
                 <marker date="1524137874502" expanded="true" signature="1383:1689" ph="..." />
@@ -313,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524125090088</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactored registration templates and aded compress feature">
+      <created>1524138073989</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524138073989</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -377,7 +375,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored base template and included background images in files" />
     <MESSAGE value="Add bootstrap refactored base template add static file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bootstrap refactored base template add static file" />
+    <MESSAGE value="Refactored registration templates and aded compress feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored registration templates and aded compress feature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -722,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bookstore/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="770">
+          <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
           <folding>
             <marker date="1524137874502" expanded="true" signature="884:1127" ph="..." />
             <marker date="1524137874502" expanded="true" signature="1383:1689" ph="..." />
