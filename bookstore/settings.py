@@ -134,12 +134,12 @@ LOGIN_REDIRECT_URL = "/store/"
 #Email Settings
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'anjants@gmail.com'
-EMAIL_HOST_PASSWORD = 'hong@2512'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = 'postmaster@sandbox8cc6cbe0f2ca4ef1b18536ac28368f03.mailgun.org'
+EMAIL_HOST_PASSWORD = 'e6f6b32d698e3bdf78ef81609418ab22-97923b2d-198a22b0'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'bookstre@mysteryboks.com'
+DEFAULT_FROM_EMAIL = 'bookstre@saanvibooks.com'
 
 #Social Auth - Facebook
 SOCIAL_AUTH_FACEBOOK_KEY = '187846821837024'
