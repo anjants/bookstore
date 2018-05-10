@@ -11,9 +11,9 @@
                                 <span class="title">{{item.book.title}}</span>by {{item.book.author.first_name}}{{item.book.author.last_name}}
                             </div>
                             <div class="cart_price">
-                                <span class="cart_quantity">{{item.quantity}} x INR<span class="cart_value">{{item.price}} </span></span>
+                                <span class="cart_quantity">{{item.quantity}} x $<span class="cart_value">{{item.price}} </span></span>
                                 Quantity: <a href="{%url 'add_to_cart' item.book.id %}">[+]</a> / <a href="{% url 'remove_from_cart' item.book.id%}"> [-] </a>
-                            </div>
+                            </div><hr>
                     </div>
                 {%empty%}
                       <div>
@@ -21,7 +21,11 @@
                       </div>
                 {%endfor%}
                         <div class="cart_total">
-                            <hr><h4>Total: INR<span class="cart_value">{{total}}</span></h4>
+                            <h4>Total: USD<span class="cart_value">{{total}}</span></h4>
+                            {% if cart %}
+                            <div>
+                                <a href="{%url 'checkout' 'paypal' %}"><img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif"></a></div>
+                            {% endif %}
                         </div>
                 </div>
 </div>
