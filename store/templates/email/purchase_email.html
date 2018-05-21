@@ -1,0 +1,9 @@
+<p>Hello {{username}}, thanks for buying your new books from Saanvi Books, Here is what comming your way!</p>
+
+{%for order in orders%}
+<p>{{order.quantity }} x {{order.title}} by {{order.book.author}}</p>
+{%endfor%}
+
+<p>Bye for now,</p>
+
+<p>Saanvi Books !</p>
